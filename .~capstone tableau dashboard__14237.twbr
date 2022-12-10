@@ -1,0 +1,3140 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20222.22.1108.1010                               -->
+<workbook original-version='18.1' source-build='2022.2.4 (20222.22.1108.1010)' source-platform='mac' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <IntuitiveSorting />
+    <IntuitiveSorting_SP2 />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='land_use_site_types' inline='true' name='federated.1o58nnq0ysmbdm1h9qwnq15dm3vd' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='land_use_site_types' name='textscan.1i7qiim1cwn1n111005an0larasm'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='land_use_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1i7qiim1cwn1n111005an0larasm' name='land_use_site_types.csv' table='[land_use_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Land Use' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1i7qiim1cwn1n111005an0larasm' name='land_use_site_types.csv' table='[land_use_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Land Use' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[land_use_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Land Use</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Land Use]</local-name>
+            <parent-name>[land_use_site_types.csv]</parent-name>
+            <remote-alias>Land Use</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[land_use_site_types.csv_DE5C865CB94E4ECFA49AFCDF703381DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[land_use_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[land_use_site_types.csv_DE5C865CB94E4ECFA49AFCDF703381DD]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='land_use_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[land_use_site_types.csv_DE5C865CB94E4ECFA49AFCDF703381DD]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='land_use_site_types.csv' id='land_use_site_types.csv_DE5C865CB94E4ECFA49AFCDF703381DD'>
+            <properties context=''>
+              <relation connection='textscan.1i7qiim1cwn1n111005an0larasm' name='land_use_site_types.csv' table='[land_use_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Land Use' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='sites_by_owner_type' inline='true' name='federated.030noq51o5uh5b1bj1wwp0wvt69q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sites_by_owner_type' name='textscan.1lkfb3g19weimr161yw1n1tekxlv'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='sites_by_owner_type.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1lkfb3g19weimr161yw1n1tekxlv' name='sites_by_owner_type.csv' table='[sites_by_owner_type#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='owner_type' ordinal='0' />
+            <column datatype='integer' name='recorded_sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1lkfb3g19weimr161yw1n1tekxlv' name='sites_by_owner_type.csv' table='[sites_by_owner_type#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='owner_type' ordinal='0' />
+            <column datatype='integer' name='recorded_sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sites_by_owner_type.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>owner_type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[owner_type]</local-name>
+            <parent-name>[sites_by_owner_type.csv]</parent-name>
+            <remote-alias>owner_type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sites_by_owner_type.csv_EB9115F1FF3944E0B87147254DF2EDF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recorded_sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recorded_sites]</local-name>
+            <parent-name>[sites_by_owner_type.csv]</parent-name>
+            <remote-alias>recorded_sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sites_by_owner_type.csv_EB9115F1FF3944E0B87147254DF2EDF9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='sites_by_owner_type.csv' datatype='table' name='[__tableau_internal_object_id__].[sites_by_owner_type.csv_EB9115F1FF3944E0B87147254DF2EDF9]' role='measure' type='quantitative' />
+      <column caption='Owner Type' datatype='string' name='[owner_type]' role='dimension' type='nominal' />
+      <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+      <column-instance column='[owner_type]' derivation='None' name='[none:owner_type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:owner_type:nk]' palette='blue_teal_10_0' type='palette'>
+            <map to='#2c5985'>
+              <bucket>&quot;state gov&quot;</bucket>
+            </map>
+            <map to='#3589a9'>
+              <bucket>&quot;private&quot;</bucket>
+            </map>
+            <map to='#6eb8c5'>
+              <bucket>&quot;local gov&quot;</bucket>
+            </map>
+            <map to='#9f3632'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#bce4d8'>
+              <bucket>&quot;federal gov&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sites_by_owner_type.csv' id='sites_by_owner_type.csv_EB9115F1FF3944E0B87147254DF2EDF9'>
+            <properties context=''>
+              <relation connection='textscan.1lkfb3g19weimr161yw1n1tekxlv' name='sites_by_owner_type.csv' table='[sites_by_owner_type#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='owner_type' ordinal='0' />
+                  <column datatype='integer' name='recorded_sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='sites_by_county' inline='true' name='federated.079twmv0fmkvkr1eglgxt1qfdics' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='sites_by_county' name='textscan.0an1fug1510l0g1cy3byl1dlj15b'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='sites_by_county.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0an1fug1510l0g1cy3byl1dlj15b' name='sites_by_county.csv' table='[sites_by_county#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='county' ordinal='0' />
+            <column datatype='integer' name='recorded_sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0an1fug1510l0g1cy3byl1dlj15b' name='sites_by_county.csv' table='[sites_by_county#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='county' ordinal='0' />
+            <column datatype='integer' name='recorded_sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[sites_by_county.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[county]</local-name>
+            <parent-name>[sites_by_county.csv]</parent-name>
+            <remote-alias>county</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sites_by_county.csv_0871D5ECC4874577BC3BCDB4D168E6F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>recorded_sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[recorded_sites]</local-name>
+            <parent-name>[sites_by_county.csv]</parent-name>
+            <remote-alias>recorded_sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[sites_by_county.csv_0871D5ECC4874577BC3BCDB4D168E6F7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='sites_by_county.csv' datatype='table' name='[__tableau_internal_object_id__].[sites_by_county.csv_0871D5ECC4874577BC3BCDB4D168E6F7]' role='measure' type='quantitative' />
+      <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;Tennessee&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='sites_by_county.csv' id='sites_by_county.csv_0871D5ECC4874577BC3BCDB4D168E6F7'>
+            <properties context=''>
+              <relation connection='textscan.0an1fug1510l0g1cy3byl1dlj15b' name='sites_by_county.csv' table='[sites_by_county#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='county' ordinal='0' />
+                  <column datatype='integer' name='recorded_sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='county_tax_receipts' inline='true' name='federated.088qxm106tpka215iav9k0dsismt' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='county_tax_receipts' name='textscan.1ne0u1303r1yha16d02r70rnv0ie'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='county_tax_receipts.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ne0u1303r1yha16d02r70rnv0ie' name='county_tax_receipts.csv' table='[county_tax_receipts#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='real' name='county_tax_receipts_in_millions' ordinal='2' />
+            <column datatype='date' name='LastReportedDate' ordinal='3' />
+            <column datatype='string' name='Unnamed: 4' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ne0u1303r1yha16d02r70rnv0ie' name='county_tax_receipts.csv' table='[county_tax_receipts#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='real' name='county_tax_receipts_in_millions' ordinal='2' />
+            <column datatype='date' name='LastReportedDate' ordinal='3' />
+            <column datatype='string' name='Unnamed: 4' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>county_tax_receipts_in_millions</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[county_tax_receipts_in_millions]</local-name>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias>county_tax_receipts_in_millions</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastReportedDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[LastReportedDate]</local-name>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias>LastReportedDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Unnamed: 4]</local-name>
+            <parent-name>[county_tax_receipts.csv]</parent-name>
+            <remote-alias>Unnamed: 4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Last Reported Date' datatype='date' name='[LastReportedDate]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='county_tax_receipts.csv' datatype='table' name='[__tableau_internal_object_id__].[county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7]' role='measure' type='quantitative' />
+      <column caption='County Tax Receipts In Millions' datatype='real' name='[county_tax_receipts_in_millions]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='county_tax_receipts.csv' id='county_tax_receipts.csv_3EC46F218BE1465D9958344CB4BB98B7'>
+            <properties context=''>
+              <relation connection='textscan.1ne0u1303r1yha16d02r70rnv0ie' name='county_tax_receipts.csv' table='[county_tax_receipts#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='real' name='county_tax_receipts_in_millions' ordinal='2' />
+                  <column datatype='date' name='LastReportedDate' ordinal='3' />
+                  <column datatype='string' name='Unnamed: 4' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='county_employment' inline='true' name='federated.0rjrd5l0g9zn031c5y3po0t2mi3x' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='county_employment' name='textscan.1bi9yxl1o4ve8l1955io013dmrrc'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='county_employment.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1bi9yxl1o4ve8l1955io013dmrrc' name='county_employment.csv' table='[county_employment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='real' name='employment_in_thousands' ordinal='2' />
+            <column datatype='date' name='LastReportedDate' ordinal='3' />
+            <column datatype='string' name='Unnamed: 4' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1bi9yxl1o4ve8l1955io013dmrrc' name='county_employment.csv' table='[county_employment#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='Year' ordinal='0' />
+            <column datatype='string' name='County' ordinal='1' />
+            <column datatype='real' name='employment_in_thousands' ordinal='2' />
+            <column datatype='date' name='LastReportedDate' ordinal='3' />
+            <column datatype='string' name='Unnamed: 4' ordinal='4' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Year</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Year]</local-name>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias>Year</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>County</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[County]</local-name>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias>County</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>employment_in_thousands</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[employment_in_thousands]</local-name>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias>employment_in_thousands</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LastReportedDate</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[LastReportedDate]</local-name>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias>LastReportedDate</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Unnamed: 4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Unnamed: 4]</local-name>
+            <parent-name>[county_employment.csv]</parent-name>
+            <remote-alias>Unnamed: 4</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <approx-count>1</approx-count>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+      <column caption='Last Reported Date' datatype='date' name='[LastReportedDate]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[Year]' role='dimension' type='quantitative' />
+      <_.fcp.ObjectModelTableType.true...column caption='county_employment.csv' datatype='table' name='[__tableau_internal_object_id__].[county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19]' role='measure' type='quantitative' />
+      <column caption='Employment In Thousands' datatype='real' name='[employment_in_thousands]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+        <semantic-value key='[County].[Name]' value='%null%' />
+        <semantic-value key='[State].[Name]' value='&quot;Tennessee&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='county_employment.csv' id='county_employment.csv_7A3ADBE0E50B4DB4B6A072DB9A7E9B19'>
+            <properties context=''>
+              <relation connection='textscan.1bi9yxl1o4ve8l1955io013dmrrc' name='county_employment.csv' table='[county_employment#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='Year' ordinal='0' />
+                  <column datatype='string' name='County' ordinal='1' />
+                  <column datatype='real' name='employment_in_thousands' ordinal='2' />
+                  <column datatype='date' name='LastReportedDate' ordinal='3' />
+                  <column datatype='string' name='Unnamed: 4' ordinal='4' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='physical_division_site_types' inline='true' name='federated.0i7u39o0a2oprf15ryyaw1u8i1v2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='physical_division_site_types' name='textscan.152hc1d1ad9bki1c6dmjt0jy0lhp'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='physical_division_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.152hc1d1ad9bki1c6dmjt0jy0lhp' name='physical_division_site_types.csv' table='[physical_division_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Physical Division' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.152hc1d1ad9bki1c6dmjt0jy0lhp' name='physical_division_site_types.csv' table='[physical_division_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Physical Division' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[physical_division_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Physical Division</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Physical Division]</local-name>
+            <parent-name>[physical_division_site_types.csv]</parent-name>
+            <remote-alias>Physical Division</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_division_site_types.csv_273B04A66A3746DD88D1DA2187FA31A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[physical_division_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[physical_division_site_types.csv_273B04A66A3746DD88D1DA2187FA31A9]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='physical_division_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[physical_division_site_types.csv_273B04A66A3746DD88D1DA2187FA31A9]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='physical_division_site_types.csv' id='physical_division_site_types.csv_273B04A66A3746DD88D1DA2187FA31A9'>
+            <properties context=''>
+              <relation connection='textscan.152hc1d1ad9bki1c6dmjt0jy0lhp' name='physical_division_site_types.csv' table='[physical_division_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Physical Division' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='reporter_site_types' inline='true' name='federated.0a1isio199az3t1ay1wkn0pafkv2' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='reporter_site_types' name='textscan.1kmz7nv1t1qq0v12q1efc19krnpk'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='reporter_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1kmz7nv1t1qq0v12q1efc19krnpk' name='reporter_site_types.csv' table='[reporter_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Reporter Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1kmz7nv1t1qq0v12q1efc19krnpk' name='reporter_site_types.csv' table='[reporter_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Reporter Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[reporter_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Reporter Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Reporter Type]</local-name>
+            <parent-name>[reporter_site_types.csv]</parent-name>
+            <remote-alias>Reporter Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reporter_site_types.csv_DDCFA85AC601458AB8498BE3DF6F4D71]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[reporter_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[reporter_site_types.csv_DDCFA85AC601458AB8498BE3DF6F4D71]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='reporter_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[reporter_site_types.csv_DDCFA85AC601458AB8498BE3DF6F4D71]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='reporter_site_types.csv' id='reporter_site_types.csv_DDCFA85AC601458AB8498BE3DF6F4D71'>
+            <properties context=''>
+              <relation connection='textscan.1kmz7nv1t1qq0v12q1efc19krnpk' name='reporter_site_types.csv' table='[reporter_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Reporter Type' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='survey_level_site_types' inline='true' name='federated.0ts50n41si1c6n1eqfsjv1k9js4k' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='survey_level_site_types' name='textscan.0sd8fvq05jl8xe1ergy0a0c62wwn'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='survey_level_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0sd8fvq05jl8xe1ergy0a0c62wwn' name='survey_level_site_types.csv' table='[survey_level_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Survey Level' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0sd8fvq05jl8xe1ergy0a0c62wwn' name='survey_level_site_types.csv' table='[survey_level_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Survey Level' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[survey_level_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Survey Level</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Survey Level]</local-name>
+            <parent-name>[survey_level_site_types.csv]</parent-name>
+            <remote-alias>Survey Level</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[survey_level_site_types.csv_0C4FCB35481B4FF68A5A1446FC8F79C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[survey_level_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[survey_level_site_types.csv_0C4FCB35481B4FF68A5A1446FC8F79C4]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='survey_level_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[survey_level_site_types.csv_0C4FCB35481B4FF68A5A1446FC8F79C4]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='survey_level_site_types.csv' id='survey_level_site_types.csv_0C4FCB35481B4FF68A5A1446FC8F79C4'>
+            <properties context=''>
+              <relation connection='textscan.0sd8fvq05jl8xe1ergy0a0c62wwn' name='survey_level_site_types.csv' table='[survey_level_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Survey Level' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='prehistoric_site_types' inline='true' name='federated.0nt99ew0mdxrh817o9u531a7a266' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='prehistoric_site_types' name='textscan.1oe867g17oc40z1az4t2m0axeu0e'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='prehistoric_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1oe867g17oc40z1az4t2m0axeu0e' name='prehistoric_site_types.csv' table='[prehistoric_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Site Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1oe867g17oc40z1az4t2m0axeu0e' name='prehistoric_site_types.csv' table='[prehistoric_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Site Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[prehistoric_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site Type]</local-name>
+            <parent-name>[prehistoric_site_types.csv]</parent-name>
+            <remote-alias>Site Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prehistoric_site_types.csv_91FDCF28D4744F9888CD91F692569673]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[prehistoric_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[prehistoric_site_types.csv_91FDCF28D4744F9888CD91F692569673]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[Site Type]' role='dimension' type='nominal' />
+      <_.fcp.ObjectModelTableType.true...column caption='prehistoric_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[prehistoric_site_types.csv_91FDCF28D4744F9888CD91F692569673]' role='measure' type='quantitative' />
+      <column-instance column='[Site Type]' derivation='None' name='[none:Site Type:nk]' pivot='key' type='nominal' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Site Type:nk]' type='palette'>
+            <map to='#499894'>
+              <bucket>&quot;open habitation&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>&quot;cave&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;isolated burial(s)&quot;</bucket>
+            </map>
+            <map to='#79706e'>
+              <bucket>&quot;quarry&quot;</bucket>
+            </map>
+            <map to='#86bcb6'>
+              <bucket>&quot;platform mound&quot;</bucket>
+            </map>
+            <map to='#8cd17d'>
+              <bucket>&quot;isolated non-diagnostic artifact&quot;</bucket>
+            </map>
+            <map to='#9d7660'>
+              <bucket>&quot;unknown&quot;</bucket>
+            </map>
+            <map to='#a0cbe8'>
+              <bucket>&quot;earth mound&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;stone mound&quot;</bucket>
+            </map>
+            <map to='#b6992d'>
+              <bucket>&quot;isolated temporally sensitive artifact&quot;</bucket>
+            </map>
+            <map to='#bab0ac'>
+              <bucket>&quot;quarrylithic extraction&quot;</bucket>
+            </map>
+            <map to='#d37295'>
+              <bucket>&quot;rock shelter&quot;</bucket>
+            </map>
+            <map to='#d4a6c8'>
+              <bucket>&quot;stoneworks&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;Pleistocene fauna&quot;</bucket>
+            </map>
+            <map to='#f1ce63'>
+              <bucket>&quot;mound complex&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;fish weir&quot;</bucket>
+            </map>
+            <map to='#fabfd2'>
+              <bucket>&quot;shell mound/midden&quot;</bucket>
+            </map>
+            <map to='#ff9d9a'>
+              <bucket>&quot;prehistoric cemetery&quot;</bucket>
+            </map>
+            <map to='#ffbe7d'>
+              <bucket>&quot;indeterminate mound&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='prehistoric_site_types.csv' id='prehistoric_site_types.csv_91FDCF28D4744F9888CD91F692569673'>
+            <properties context=''>
+              <relation connection='textscan.1oe867g17oc40z1az4t2m0axeu0e' name='prehistoric_site_types.csv' table='[prehistoric_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Site Type' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+    <datasource caption='historic_site_types' inline='true' name='federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='historic_site_types' name='textscan.0hk7og90cioas513v80f201xoiqe'>
+            <connection class='textscan' directory='/Users/tara_nicole/Documents/DA7/projects/archaeological-sites-and-tourism-economic-impact/tableau data' filename='historic_site_types.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.0hk7og90cioas513v80f201xoiqe' name='historic_site_types.csv' table='[historic_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Site Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.0hk7og90cioas513v80f201xoiqe' name='historic_site_types.csv' table='[historic_site_types#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='string' name='Site Type' ordinal='0' />
+            <column datatype='integer' name='Recorded Sites' ordinal='1' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[historic_site_types.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Site Type</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Site Type]</local-name>
+            <parent-name>[historic_site_types.csv]</parent-name>
+            <remote-alias>Site Type</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[historic_site_types.csv_9613547B8B244196AC386B4217FB792C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Recorded Sites</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Recorded Sites]</local-name>
+            <parent-name>[historic_site_types.csv]</parent-name>
+            <remote-alias>Recorded Sites</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[historic_site_types.csv_9613547B8B244196AC386B4217FB792C]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <_.fcp.ObjectModelTableType.true...column caption='historic_site_types.csv' datatype='table' name='[__tableau_internal_object_id__].[historic_site_types.csv_9613547B8B244196AC386B4217FB792C]' role='measure' type='quantitative' />
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='historic_site_types.csv' id='historic_site_types.csv_9613547B8B244196AC386B4217FB792C'>
+            <properties context=''>
+              <relation connection='textscan.0hk7og90cioas513v80f201xoiqe' name='historic_site_types.csv' table='[historic_site_types#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='string' name='Site Type' ordinal='0' />
+                  <column datatype='integer' name='Recorded Sites' ordinal='1' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='bottom_10_county_employment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bottom 10 Tourism Employment by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='county_employment' name='federated.0rjrd5l0g9zn031c5y3po0t2mi3x' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0rjrd5l0g9zn031c5y3po0t2mi3x'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Employment In Thousands' datatype='real' name='[employment_in_thousands]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employment_in_thousands]' derivation='Sum' name='[sum:employment_in_thousands:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([employment_in_thousands])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]</rows>
+        <cols>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]</cols>
+      </table>
+      <simple-id uuid='{5D9CA4E9-CD22-46CE-9D40-9F7671F99F97}' />
+    </worksheet>
+    <worksheet name='bottom_10_county_tax_receipts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bottom 10 Tourism Tax Receipts by County </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='county_tax_receipts' name='federated.088qxm106tpka215iav9k0dsismt' />
+          </datasources>
+          <datasource-dependencies datasource='federated.088qxm106tpka215iav9k0dsismt'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='County Tax Receipts In Millions' datatype='real' name='[county_tax_receipts_in_millions]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county_tax_receipts_in_millions]' derivation='Sum' name='[sum:county_tax_receipts_in_millions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([county_tax_receipts_in_millions])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]</rows>
+        <cols>[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]</cols>
+      </table>
+      <simple-id uuid='{512C5C4A-7AAD-4CDE-BB9B-6C00D7E9266C}' />
+    </worksheet>
+    <worksheet name='bottom_10_sites_by_county'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Bottom 10 Number of Sites by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sites_by_county' name='federated.079twmv0fmkvkr1eglgxt1qfdics' />
+          </datasources>
+          <datasource-dependencies datasource='federated.079twmv0fmkvkr1eglgxt1qfdics'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+            <column-instance column='[recorded_sites]' derivation='Sum' name='[sum:recorded_sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]'>
+            <groupfilter count='10' end='bottom' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([recorded_sites])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]' direction='ASC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]</rows>
+        <cols>[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]</cols>
+      </table>
+      <simple-id uuid='{D009ECF0-72D2-4243-A1FE-A1BB1959A3AD}' />
+    </worksheet>
+    <worksheet name='historic_type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Historic Sites by Type&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='historic_site_types' name='federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy'>
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site Type]' role='dimension' type='nominal' />
+            <column-instance column='[Site Type]' derivation='None' name='[none:Site Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[none:Site Type:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Recorded Sites])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Site Type:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='&quot;home industrypottery_traditional earthenware and-or stoneware&quot;' />
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='&quot;unknown&quot;' />
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[none:Site Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[none:Site Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[none:Site Type:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[none:Site Type:nk]</cols>
+      </table>
+      <simple-id uuid='{347F2B10-5079-44EC-AF76-8B7F62F5D543}' />
+    </worksheet>
+    <worksheet name='land_use_types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Site Types by Land Use Category</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='land_use_site_types' name='federated.1o58nnq0ysmbdm1h9qwnq15dm3vd' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1o58nnq0ysmbdm1h9qwnq15dm3vd'>
+            <column datatype='string' name='[Land Use]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column-instance column='[Land Use]' derivation='None' name='[none:Land Use:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='None' name='[none:Recorded Sites:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='quantitative' column='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[none:Recorded Sites:qk]' included-values='in-range'>
+            <min>50</min>
+            <max>5435</max>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[none:Land Use:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[none:Recorded Sites:qk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='background-color' scope='rows' value='#00000000' />
+            <format attr='background-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[none:Land Use:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' num-steps='11' palette='green_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#000000' />
+            <format attr='band-color' scope='rows' value='#000000' />
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#000000' />
+            <format attr='band-color' scope='cols' value='#00000000' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='title'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' />
+              <text column='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[none:Land Use:nk]</cols>
+      </table>
+      <simple-id uuid='{E5BEB9A7-5B8C-4AEF-82D9-5B73CBDC37DD}' />
+    </worksheet>
+    <worksheet name='owner_types'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sites by Owner Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sites_by_owner_type' name='federated.030noq51o5uh5b1bj1wwp0wvt69q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.030noq51o5uh5b1bj1wwp0wvt69q'>
+            <column-instance column='[owner_type]' derivation='None' name='[none:owner_type:nk]' pivot='key' type='nominal' />
+            <column caption='Owner Type' datatype='string' name='[owner_type]' role='dimension' type='nominal' />
+            <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+            <column-instance column='[recorded_sites]' derivation='Sum' name='[sum:recorded_sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[none:owner_type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:owner_type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:owner_type:nk]' member='&quot;unknown&quot;' />
+                <groupfilter function='member' level='[none:owner_type:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[none:owner_type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.030noq51o5uh5b1bj1wwp0wvt69q].[none:owner_type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]</rows>
+        <cols>[federated.030noq51o5uh5b1bj1wwp0wvt69q].[none:owner_type:nk]</cols>
+      </table>
+      <simple-id uuid='{D9FC0BE3-FD34-4411-A168-FB6638B82905}' />
+    </worksheet>
+    <worksheet name='physical_division_type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sites by Physical Division</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='physical_division_site_types' name='federated.0i7u39o0a2oprf15ryyaw1u8i1v2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0i7u39o0a2oprf15ryyaw1u8i1v2'>
+            <column datatype='string' name='[Physical Division]' role='dimension' type='nominal' />
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column-instance column='[Physical Division]' derivation='None' name='[none:Physical Division:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[none:Physical Division:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Physical Division:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Physical Division:nk]' member='&quot;unknown&quot;' />
+                <groupfilter function='member' level='[none:Physical Division:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[none:Physical Division:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[none:Physical Division:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[none:Physical Division:nk]</cols>
+      </table>
+      <simple-id uuid='{AF090921-7737-46CC-99A0-3BEBBACEB676}' />
+    </worksheet>
+    <worksheet name='prehistoric_type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Prehistoric Sites by Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='prehistoric_site_types' name='federated.0nt99ew0mdxrh817o9u531a7a266' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0nt99ew0mdxrh817o9u531a7a266'>
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Site Type]' role='dimension' type='nominal' />
+            <column-instance column='[Site Type]' derivation='None' name='[none:Site Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0nt99ew0mdxrh817o9u531a7a266].[none:Site Type:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([Recorded Sites])' function='order' user:ui-marker='order'>
+                <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+                  <groupfilter function='level-members' level='[none:Site Type:nk]' />
+                  <groupfilter function='union'>
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='&quot;open habitation&quot;' />
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='&quot;unknown&quot;' />
+                    <groupfilter function='member' level='[none:Site Type:nk]' member='%null%' />
+                  </groupfilter>
+                </groupfilter>
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0nt99ew0mdxrh817o9u531a7a266].[none:Site Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0nt99ew0mdxrh817o9u531a7a266].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0nt99ew0mdxrh817o9u531a7a266].[none:Site Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0nt99ew0mdxrh817o9u531a7a266].[none:Site Type:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0nt99ew0mdxrh817o9u531a7a266].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0nt99ew0mdxrh817o9u531a7a266].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.0nt99ew0mdxrh817o9u531a7a266].[none:Site Type:nk]</cols>
+      </table>
+      <simple-id uuid='{18093B3C-8339-4600-908D-2C82CFDF8B76}' />
+    </worksheet>
+    <worksheet name='reporter_type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sites by Reporter Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='reporter_site_types' name='federated.0a1isio199az3t1ay1wkn0pafkv2' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0a1isio199az3t1ay1wkn0pafkv2'>
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Reporter Type]' role='dimension' type='nominal' />
+            <column-instance column='[Reporter Type]' derivation='None' name='[none:Reporter Type:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0a1isio199az3t1ay1wkn0pafkv2].[none:Reporter Type:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Reporter Type:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Reporter Type:nk]' member='&quot;unknown&quot;' />
+                <groupfilter function='member' level='[none:Reporter Type:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0a1isio199az3t1ay1wkn0pafkv2].[none:Reporter Type:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0a1isio199az3t1ay1wkn0pafkv2].[none:Reporter Type:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0a1isio199az3t1ay1wkn0pafkv2].[none:Reporter Type:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.0a1isio199az3t1ay1wkn0pafkv2].[none:Reporter Type:nk]</cols>
+      </table>
+      <simple-id uuid='{B225F082-C5F2-4CE4-9018-42681D678958}' />
+    </worksheet>
+    <worksheet name='sites_by_county_map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Archaeological Sites by County </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sites_by_county' name='federated.079twmv0fmkvkr1eglgxt1qfdics' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.079twmv0fmkvkr1eglgxt1qfdics'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+            <column-instance column='[recorded_sites]' derivation='Sum' name='[sum:recorded_sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.079twmv0fmkvkr1eglgxt1qfdics].[Longitude (generated)]' field-type='quantitative' max='-9040676.634996945' min='-10101399.987749362' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.079twmv0fmkvkr1eglgxt1qfdics].[Latitude (generated)]' field-type='quantitative' max='4614669.8379414976' min='3941233.8691589572' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' num-steps='20' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' />
+              <lod column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]' />
+              <color column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' />
+              <geometry column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[Geometry (generated)]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='false' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-mode' value='range' />
+                <format attr='mark-labels-range-field' value='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.079twmv0fmkvkr1eglgxt1qfdics].[Latitude (generated)]</rows>
+        <cols>[federated.079twmv0fmkvkr1eglgxt1qfdics].[Longitude (generated)]</cols>
+      </table>
+      <simple-id uuid='{83BB5D2C-3202-4D43-B532-834F254F10A5}' />
+    </worksheet>
+    <worksheet name='survey_level_type'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Sites by Survey Level</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='survey_level_site_types' name='federated.0ts50n41si1c6n1eqfsjv1k9js4k' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ts50n41si1c6n1eqfsjv1k9js4k'>
+            <column datatype='integer' name='[Recorded Sites]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Survey Level]' role='dimension' type='nominal' />
+            <column-instance column='[Survey Level]' derivation='None' name='[none:Survey Level:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Recorded Sites]' derivation='Sum' name='[sum:Recorded Sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[none:Survey Level:nk]'>
+            <groupfilter function='except' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:Survey Level:nk]' />
+              <groupfilter function='union'>
+                <groupfilter function='member' level='[none:Survey Level:nk]' member='&quot;unknown&quot;' />
+                <groupfilter function='member' level='[none:Survey Level:nk]' member='%null%' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[none:Survey Level:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[none:Survey Level:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='width' field='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' value='60' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[none:Survey Level:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]</rows>
+        <cols>[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[none:Survey Level:nk]</cols>
+      </table>
+      <simple-id uuid='{BF9F551B-B511-492B-AAFE-9FA8C6089656}' />
+    </worksheet>
+    <worksheet name='top_10_county_employment'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Tourism Employment by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='county_employment' name='federated.0rjrd5l0g9zn031c5y3po0t2mi3x' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0rjrd5l0g9zn031c5y3po0t2mi3x'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='Employment In Thousands' datatype='real' name='[employment_in_thousands]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[employment_in_thousands]' derivation='Sum' name='[sum:employment_in_thousands:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([employment_in_thousands])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-orientation' field='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]' value='-90' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' num-steps='20' palette='red_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' />
+              <lod column='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]</rows>
+        <cols>[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[none:County:nk]</cols>
+      </table>
+      <simple-id uuid='{C12CE1D7-2E3A-4803-904A-0DFB983ACEA5}' />
+    </worksheet>
+    <worksheet name='top_10_county_tax_receipts'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Tourism Tax Receipts by County </run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='county_tax_receipts' name='federated.088qxm106tpka215iav9k0dsismt' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.088qxm106tpka215iav9k0dsismt'>
+            <column datatype='string' name='[County]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column caption='County Tax Receipts In Millions' datatype='real' name='[county_tax_receipts_in_millions]' role='measure' type='quantitative' />
+            <column-instance column='[County]' derivation='None' name='[none:County:nk]' pivot='key' type='nominal' />
+            <column-instance column='[county_tax_receipts_in_millions]' derivation='Sum' name='[sum:county_tax_receipts_in_millions:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([county_tax_receipts_in_millions])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:County:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <filter class='quantitative' column='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' included-values='in-range' />
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]</column>
+            <column>[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+          <style-rule element='tooltip'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]</rows>
+        <cols>[federated.088qxm106tpka215iav9k0dsismt].[none:County:nk]</cols>
+      </table>
+      <simple-id uuid='{EECCC022-DD0B-45CF-B940-65C2625C3289}' />
+    </worksheet>
+    <worksheet name='top_10_sites_by_county'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Top 10 Number of Sites by County</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='sites_by_county' name='federated.079twmv0fmkvkr1eglgxt1qfdics' />
+          </datasources>
+          <datasource-dependencies datasource='federated.079twmv0fmkvkr1eglgxt1qfdics'>
+            <column caption='County' datatype='string' name='[county]' role='dimension' semantic-role='[County].[Name]' type='nominal' />
+            <column-instance column='[county]' derivation='None' name='[none:county:nk]' pivot='key' type='nominal' />
+            <column caption='Recorded Sites' datatype='integer' name='[recorded_sites]' role='measure' type='quantitative' />
+            <column-instance column='[recorded_sites]' derivation='Sum' name='[sum:recorded_sites:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]'>
+            <groupfilter count='10' end='top' function='end' units='records' user:ui-marker='end' user:ui-top-by-field='true'>
+              <groupfilter direction='DESC' expression='SUM([recorded_sites])' function='order' user:ui-marker='order'>
+                <groupfilter function='level-members' level='[none:county:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+              </groupfilter>
+            </groupfilter>
+          </filter>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort='[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]' direction='DESC' is-on-innermost-dimension='true' measure-to-sort-by='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' shelf='columns' />
+          </shelf-sorts>
+          <slices>
+            <column>[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' palette='orange_gold_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#e6e6e6' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-weight' value='bold' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]</rows>
+        <cols>[federated.079twmv0fmkvkr1eglgxt1qfdics].[none:county:nk]</cols>
+      </table>
+      <simple-id uuid='{B5434C6B-0D46-4290-9735-8F206F1BEA35}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Archaeological Sites by County'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='63600' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='63600' x='800' y='1000'>
+              <zone h='92000' id='3' name='sites_by_county_map' w='63600' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='6000' id='8' name='sites_by_county_map' pane-specification-id='0' param='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' type-v2='color' w='63600' x='800' y='93000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='49100' id='9' name='top_10_sites_by_county' w='34800' x='64400' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone h='48900' id='10' name='bottom_10_sites_by_county' w='34800' x='64400' y='50100'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='950' minheight='950' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='92000' id='3' is-fixed='true' name='sites_by_county_map' w='63600' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='6000' id='8' name='sites_by_county_map' pane-specification-id='0' param='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' type-v2='color' w='63600' x='800' y='93000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='49100' id='9' is-fixed='true' name='top_10_sites_by_county' w='34800' x='64400' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='48900' id='10' is-fixed='true' name='bottom_10_sites_by_county' w='34800' x='64400' y='50100'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{07506F09-E657-4AA4-AAAA-3D91766901FD}' />
+    </dashboard>
+    <dashboard name='Capstone' type='storyboard'>
+      <style />
+      <size maxheight='964' maxwidth='1016' minheight='964' minwidth='1016' />
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98340' id='7' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+            <zone h='98340' id='1' param='vert' removable='false' type-v2='layout-flow' w='98426' x='787' y='830'>
+              <zone fixed-size='107' h='11100' id='4' is-fixed='true' paired-zone-id='5' removable='false' type-v2='flipboard-nav' w='98426' x='787' y='830' />
+              <zone h='87240' id='5' paired-zone-id='4' removable='false' type-v2='flipboard' w='98426' x='787' y='11930'>
+                <flipboard active-id='3' nav-type='caption' show-nav-arrows='true'>
+                  <story-points>
+                    <story-point caption='Archaeological Sites by County ' captured-sheet='Archaeological Sites by County' id='3' />
+                    <story-point caption='Sites by Reporter and Owner Type' captured-sheet='Reporter and Owner Type' id='8' />
+                    <story-point caption='Sites by Land Use, Physical Division, and Survey Level' captured-sheet='Land Use, Physical Division, and Survey Level' id='9' />
+                    <story-point caption='Top and Bottom 10 Tourism Tax Receipts by County' captured-sheet='Tourism Tax Receipts' id='2' />
+                    <story-point caption='Top and Bottom 10 Tourism Employment by County ' captured-sheet='Tourism Employment' id='5' />
+                    <story-point caption='Top 10 Prehistoric and Historic Site Types' captured-sheet='Prehistoric and Historic Site Types' id='10' />
+                  </story-points>
+                </flipboard>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <simple-id uuid='{4E0727D5-E565-4E93-87C8-E81FCE4729A9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Land Use, Physical Division, and Survey Level'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='88000' id='3' name='land_use_types' w='33300' x='100' y='1500' />
+        <zone h='9500' id='4' name='land_use_types' pane-specification-id='0' param='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' type-v2='color' w='30600' x='1100' y='89500' />
+        <zone h='88000' id='5' name='physical_division_type' w='33600' x='33200' y='1500' />
+        <zone h='10125' id='6' name='physical_division_type' pane-specification-id='0' param='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]' type-v2='color' w='30800' x='34600' y='89500' />
+        <zone h='87750' id='7' name='survey_level_type' w='33300' x='66800' y='1625' />
+        <zone h='10125' id='8' name='survey_level_type' pane-specification-id='0' param='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' type-v2='color' w='29200' x='69400' y='89500' />
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1100' minheight='1100' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='12' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='11' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88000' id='3' is-fixed='true' name='land_use_types' w='33300' x='100' y='1500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9500' id='4' name='land_use_types' pane-specification-id='0' param='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' type-v2='color' w='30600' x='1100' y='89500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88000' id='5' is-fixed='true' name='physical_division_type' w='33600' x='33200' y='1500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10125' id='6' name='physical_division_type' pane-specification-id='0' param='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]' type-v2='color' w='30800' x='34600' y='89500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='87750' id='7' is-fixed='true' name='survey_level_type' w='33300' x='66800' y='1625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='10125' id='8' name='survey_level_type' pane-specification-id='0' param='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' type-v2='color' w='29200' x='69400' y='89500'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{CC217433-5167-495D-95F8-759F2BC3EAB6}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Prehistoric and Historic Site Types'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='88625' id='3' name='prehistoric_type' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='88625' id='9' name='historic_type' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='8' name='prehistoric_type' pane-specification-id='0' param='[federated.0nt99ew0mdxrh817o9u531a7a266].[sum:Recorded Sites:qk]' type-v2='color' w='49200' x='800' y='89625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='10' name='historic_type' pane-specification-id='0' param='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[sum:Recorded Sites:qk]' type-v2='color' w='49200' x='50000' y='89625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{AF054BDA-21B8-4B68-B01D-D85433D1E869}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Reporter and Owner Type'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='98000' id='5' type-v2='layout-basic' w='98400' x='800' y='1000'>
+              <zone h='88625' id='3' name='reporter_type' w='49200' x='800' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='88625' id='9' name='owner_types' w='49200' x='50000' y='1000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='10' name='owner_types' pane-specification-id='0' param='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' type-v2='color' w='49200' x='50000' y='89625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='9375' id='8' name='reporter_type' pane-specification-id='0' param='[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]' type-v2='color' w='49200' x='800' y='89625'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='750' minheight='750' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='14' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='13' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88625' id='3' is-fixed='true' name='reporter_type' w='49200' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='8' name='reporter_type' pane-specification-id='0' param='[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]' type-v2='color' w='49200' x='800' y='89625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88625' id='9' is-fixed='true' name='owner_types' w='49200' x='50000' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='10' name='owner_types' pane-specification-id='0' param='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' type-v2='color' w='49200' x='50000' y='89625'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{2983271C-A53A-4D14-AAF6-9620302A9EA2}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Tourism Employment'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='88625' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='10375'>
+            <zone h='88625' id='5' type-v2='layout-basic' w='98400' x='800' y='10375'>
+              <zone h='88625' id='3' name='top_10_county_employment' w='49200' x='800' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='88625' id='9' name='bottom_10_county_employment' w='49200' x='50000' y='10375'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='9375' id='10' type-v2='layout-flow' w='98400' x='800' y='1000'>
+            <zone h='9375' id='8' name='top_10_county_employment' pane-specification-id='0' param='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' type-v2='color' w='98400' x='800' y='1000'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='16' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='15' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='88625' id='3' is-fixed='true' name='top_10_county_employment' w='49200' x='800' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='9375' id='8' name='top_10_county_employment' pane-specification-id='0' param='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' type-v2='color' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='88625' id='9' is-fixed='true' name='bottom_10_county_employment' w='49200' x='50000' y='10375'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{85214D93-634D-4575-ACEE-7DE06A9E58D9}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Tourism Tax Receipts'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='91000' id='7' param='horz' type-v2='layout-flow' w='98400' x='800' y='8000'>
+            <zone h='91000' id='5' type-v2='layout-basic' w='98400' x='800' y='8000'>
+              <zone h='91000' id='3' name='top_10_county_tax_receipts' w='49200' x='800' y='8000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+              <zone h='91000' id='9' name='bottom_10_county_tax_receipts' w='49200' x='50000' y='8000'>
+                <zone-style>
+                  <format attr='border-color' value='#000000' />
+                  <format attr='border-style' value='none' />
+                  <format attr='border-width' value='0' />
+                  <format attr='margin' value='4' />
+                </zone-style>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='7000' id='8' name='top_10_county_tax_receipts' pane-specification-id='0' param='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' type-v2='color' w='98400' x='800' y='1000'>
+            <zone-style>
+              <format attr='border-color' value='#000000' />
+              <format attr='border-style' value='none' />
+              <format attr='border-width' value='0' />
+              <format attr='margin' value='4' />
+            </zone-style>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='17' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='98000' id='16' param='vert' type-v2='layout-flow' w='98400' x='800' y='1000'>
+                <zone fixed-size='280' h='91000' id='3' is-fixed='true' name='top_10_county_tax_receipts' w='49200' x='800' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone h='7000' id='8' name='top_10_county_tax_receipts' pane-specification-id='0' param='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' type-v2='color' w='98400' x='800' y='1000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+                <zone fixed-size='280' h='91000' id='9' is-fixed='true' name='bottom_10_county_tax_receipts' w='49200' x='50000' y='8000'>
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{EF28AD5D-4CB9-4706-B97D-0183F10EB8E9}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='218'>
+    <window class='worksheet' name='sites_by_county_map' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{7F758854-751A-4B98-BEBA-3C2B90F98A77}' />
+    </window>
+    <window class='worksheet' name='top_10_sites_by_county' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{07FEA4E4-0D5B-4966-9657-8DF55C7C1F59}' />
+    </window>
+    <window class='worksheet' name='bottom_10_sites_by_county' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.079twmv0fmkvkr1eglgxt1qfdics].[sum:recorded_sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{A6937855-4A2D-4475-96A5-24777017C292}' />
+    </window>
+    <window class='worksheet' name='top_10_county_tax_receipts' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{B8026577-C702-409C-B0F5-91D3E362741E}' />
+    </window>
+    <window class='worksheet' name='bottom_10_county_tax_receipts' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.088qxm106tpka215iav9k0dsismt].[sum:county_tax_receipts_in_millions:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{428F7105-10E0-4874-B444-F889F33D8F5E}' />
+    </window>
+    <window class='worksheet' name='top_10_county_employment' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{2BB4B407-58A2-4FDF-A85B-6301682F5506}' />
+    </window>
+    <window class='worksheet' name='bottom_10_county_employment' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0rjrd5l0g9zn031c5y3po0t2mi3x].[sum:employment_in_thousands:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{1A507259-AAC8-4505-93D2-810EBE64E058}' />
+    </window>
+    <window class='worksheet' name='owner_types' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.030noq51o5uh5b1bj1wwp0wvt69q].[sum:recorded_sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BFDA4F34-201D-4BFA-95B8-2B63BC4BBC57}' />
+    </window>
+    <window class='worksheet' name='land_use_types' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='189'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='183'>
+            <card pane-specification-id='0' param='[federated.1o58nnq0ysmbdm1h9qwnq15dm3vd].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{0D91FC04-8B43-4559-B748-D2775A3D26DB}' />
+    </window>
+    <window class='worksheet' name='prehistoric_type' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0nt99ew0mdxrh817o9u531a7a266].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{35F6170F-769E-4532-8BAD-8F5184EB869E}' />
+    </window>
+    <window class='worksheet' name='historic_type' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1lkvpey0ouxrsd1a7nwrk0vuhbuy].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{D9254C14-06DC-46C4-BE01-6E3A4ECBE18B}' />
+    </window>
+    <window class='worksheet' name='physical_division_type' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0i7u39o0a2oprf15ryyaw1u8i1v2].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{663549AF-544B-4B5E-A81A-6CAF78A7EEAE}' />
+    </window>
+    <window class='worksheet' name='survey_level_type' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0ts50n41si1c6n1eqfsjv1k9js4k].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{9B928EEE-D764-4F7C-B92C-BE9FA46C8D98}' />
+    </window>
+    <window class='worksheet' name='reporter_type' tab-color='#f66273'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.0a1isio199az3t1ay1wkn0pafkv2].[sum:Recorded Sites:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{BBDE36C5-405C-4D67-AFC6-BCBB6E2B3C45}' />
+    </window>
+    <window class='dashboard' name='Tourism Tax Receipts' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='bottom_10_county_tax_receipts'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top_10_county_tax_receipts'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='3' />
+      <simple-id uuid='{0E55FDF2-426F-4A3C-A2A7-1BDCDA57319A}' />
+    </window>
+    <window class='dashboard' name='Tourism Employment' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='bottom_10_county_employment'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top_10_county_employment'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{0CC5B5C5-175A-4720-9348-4E11C6A2A62F}' />
+    </window>
+    <window class='dashboard' name='Archaeological Sites by County' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='bottom_10_sites_by_county'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='sites_by_county_map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='top_10_sites_by_county'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FDC9E659-D260-49C7-B7E9-1083678F750C}' />
+    </window>
+    <window class='dashboard' name='Reporter and Owner Type' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='owner_types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='reporter_type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{060DC4A1-0E17-4C83-A949-14E16401146E}' />
+    </window>
+    <window class='dashboard' name='Land Use, Physical Division, and Survey Level' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='land_use_types'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='physical_division_type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='survey_level_type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='5' />
+      <simple-id uuid='{9303A5DE-A526-406B-843A-C73A36FD43E4}' />
+    </window>
+    <window class='dashboard' name='Prehistoric and Historic Site Types' tab-color='#dec77b'>
+      <viewpoints>
+        <viewpoint name='historic_type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='prehistoric_type'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{FF1645EF-24FA-41F8-A254-A666EDF227FF}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Capstone' tab-color='#17927d'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{83DFEEEE-9A59-423F-8D4E-CB034CEE1F1D}' />
+    </window>
+  </windows>
+</workbook>
